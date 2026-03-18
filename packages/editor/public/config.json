@@ -1,0 +1,108 @@
+{
+  "version": "1.1.0",
+  "patterns": [
+    {
+      "id": "geometric-01",
+      "name": "几何交织",
+      "style": "geometric",
+      "thumbnail": "/patterns/geometric-01-thumb.png",
+      "src": "/patterns/geometric-01.png",
+      "tileable": true
+    },
+    {
+      "id": "geometric-02",
+      "name": "几何人字纹",
+      "style": "chevron",
+      "thumbnail": "/patterns/geometric-02-thumb.png",
+      "src": "/patterns/geometric-02.png",
+      "tileable": true
+    },
+    {
+      "id": "floral-01",
+      "name": "花卉绽放",
+      "style": "floral",
+      "thumbnail": "/patterns/floral-01-thumb.png",
+      "src": "/patterns/floral-01.png",
+      "tileable": false
+    },
+    {
+      "id": "abstract-01",
+      "name": "抽象流线",
+      "style": "abstract",
+      "thumbnail": "/patterns/abstract-01-thumb.png",
+      "src": "/patterns/abstract-01.png",
+      "tileable": true
+    },
+    {
+      "id": "stripe-01",
+      "name": "经典条纹",
+      "style": "stripe",
+      "thumbnail": "/patterns/stripe-01-thumb.png",
+      "src": "/patterns/stripe-01.png",
+      "tileable": true
+    },
+    {
+      "id": "dot-01",
+      "name": "波点矩阵",
+      "style": "dot",
+      "thumbnail": "/patterns/dot-01-thumb.png",
+      "src": "/patterns/dot-01.png",
+      "tileable": true
+    }
+  ],
+  "colorOptions": [
+    { "id": "ivory", "name": "象牙白", "value": "#F7F2E8" },
+    { "id": "charcoal", "name": "炭黑", "value": "#1A1A1A" },
+    { "id": "sand", "name": "沙米", "value": "#D8C7A1" },
+    { "id": "terracotta", "name": "陶土红", "value": "#C06C54" },
+    { "id": "navy", "name": "海军蓝", "value": "#23395B" },
+    { "id": "sage", "name": "鼠尾草绿", "value": "#8FA67A" },
+    { "id": "gold", "name": "浅金", "value": "#D8AA5A" },
+    { "id": "rose", "name": "豆沙粉", "value": "#C77B8A" },
+    { "id": "stone", "name": "石灰灰", "value": "#9EA4A3" },
+    { "id": "teal", "name": "蓝绿", "value": "#2B7A78" }
+  ],
+  "colorSchemes": [
+    {
+      "id": "classic",
+      "name": "经典黑白",
+      "background": "#F7F2E8",
+      "primary": "#1A1A1A",
+      "secondary": "#9EA4A3"
+    },
+    {
+      "id": "earth",
+      "name": "自然泥土",
+      "background": "#D8C7A1",
+      "primary": "#C06C54",
+      "secondary": "#8FA67A"
+    },
+    {
+      "id": "royal",
+      "name": "深海金",
+      "background": "#23395B",
+      "primary": "#D8AA5A",
+      "secondary": "#F7F2E8"
+    },
+    {
+      "id": "warm",
+      "name": "温暖玫瑰",
+      "background": "#F7F2E8",
+      "primary": "#C77B8A",
+      "secondary": "#D8AA5A"
+    }
+  ],
+  "fonts": [
+    { "id": "playfair", "name": "Playfair Display", "value": "'Playfair Display', serif" },
+    { "id": "montserrat", "name": "Montserrat", "value": "'Montserrat', sans-serif" },
+    { "id": "lora", "name": "Lora", "value": "'Lora', serif" },
+    { "id": "oswald", "name": "Oswald", "value": "'Oswald', sans-serif" },
+    { "id": "cormorant", "name": "Cormorant Garamond", "value": "'Cormorant Garamond', serif" }
+  ],
+  "sizes": [
+    { "id": "49x56", "name": "49 x 56 cm", "width": 49, "height": 56 },
+    { "id": "60x90", "name": "60 x 90 cm", "width": 60, "height": 90 },
+    { "id": "80x120", "name": "80 x 120 cm", "width": 80, "height": 120 },
+    { "id": "100x150", "name": "100 x 150 cm", "width": 100, "height": 150 }
+  ]
+}

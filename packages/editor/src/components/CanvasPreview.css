@@ -1,0 +1,37 @@
+.canvas-preview {
+  border: 1px solid var(--nyc-border);
+  border-radius: var(--radius-sm);
+  background: var(--nyc-surface);
+  padding: var(--space-4);
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--nyc-surface-muted);
+  border: 1px solid var(--nyc-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+  overflow: auto;
+}
+
+.rug-canvas {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--nyc-border-strong);
+  cursor: grab;
+  touch-action: none;
+  background: var(--nyc-white);
+}
+
+.rug-canvas:active {
+  cursor: grabbing;
+}
+
+.canvas-info {
+  margin-top: var(--space-2);
+  color: var(--nyc-muted);
+  font-size: var(--text-xs);
+  line-height: 1.5;
+}

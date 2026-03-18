@@ -1,0 +1,53 @@
+{
+  "schemes": [
+    {
+      "id": "white-black",
+      "name": "经典黑白",
+      "background": "#FFFFFF",
+      "primary": "#000000"
+    },
+    {
+      "id": "cream-brown",
+      "name": "奶油棕",
+      "background": "#FFF8DC",
+      "primary": "#8B4513"
+    },
+    {
+      "id": "gray-blue",
+      "name": "灰蓝调",
+      "background": "#E8E8E8",
+      "primary": "#4A6FA5"
+    },
+    {
+      "id": "beige-burgundy",
+      "name": "米酒红",
+      "background": "#F5F5DC",
+      "primary": "#800020"
+    },
+    {
+      "id": "ivory-navy",
+      "name": "象牙藏青",
+      "background": "#FFFFF0",
+      "primary": "#000080"
+    },
+    {
+      "id": "sage-green",
+      "name": "鼠尾草绿",
+      "background": "#F0F5F0",
+      "primary": "#6B8E23"
+    },
+    {
+      "id": "warm-grey",
+      "name": "暖灰色",
+      "background": "#F5F5F2",
+      "primary": "#808080"
+    },
+    {
+      "id": "soft-pink",
+      "name": "柔粉色",
+      "background": "#FFF0F5",
+      "primary": "#DB7093",
+      "secondary": "#FFB6C1"
+    }
+  ]
+}

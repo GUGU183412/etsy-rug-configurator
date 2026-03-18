@@ -1,0 +1,60 @@
+{
+  "patterns": [
+    {
+      "id": "geometric-01",
+      "name": "几何图案 A",
+      "thumbnail": "/patterns/geometric-01-thumb.png",
+      "src": "/patterns/geometric-01.png",
+      "tileable": true
+    },
+    {
+      "id": "geometric-02",
+      "name": "几何图案 B",
+      "thumbnail": "/patterns/geometric-02-thumb.png",
+      "src": "/patterns/geometric-02.png",
+      "tileable": true
+    },
+    {
+      "id": "floral-01",
+      "name": "花卉图案 A",
+      "thumbnail": "/patterns/floral-01-thumb.png",
+      "src": "/patterns/floral-01.png",
+      "tileable": false
+    },
+    {
+      "id": "floral-02",
+      "name": "花卉图案 B",
+      "thumbnail": "/patterns/floral-02-thumb.png",
+      "src": "/patterns/floral-02.png",
+      "tileable": false
+    },
+    {
+      "id": "abstract-01",
+      "name": "抽象图案 A",
+      "thumbnail": "/patterns/abstract-01-thumb.png",
+      "src": "/patterns/abstract-01.png",
+      "tileable": true
+    },
+    {
+      "id": "abstract-02",
+      "name": "抽象图案 B",
+      "thumbnail": "/patterns/abstract-02-thumb.png",
+      "src": "/patterns/abstract-02.png",
+      "tileable": true
+    },
+    {
+      "id": "stripe-01",
+      "name": "条纹图案 A",
+      "thumbnail": "/patterns/stripe-01-thumb.png",
+      "src": "/patterns/stripe-01.png",
+      "tileable": true
+    },
+    {
+      "id": "dot-01",
+      "name": "波点图案 A",
+      "thumbnail": "/patterns/dot-01-thumb.png",
+      "src": "/patterns/dot-01.png",
+      "tileable": true
+    }
+  ]
+}

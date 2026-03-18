@@ -1,0 +1,39 @@
+{
+  "name": "@rug-configurator/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./types": {
+      "import": "./dist/types/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./canvas": {
+      "import": "./dist/canvas/index.js",
+      "types": "./dist/canvas/index.d.ts"
+    },
+    "./production": {
+      "import": "./dist/production/index.js",
+      "types": "./dist/production/index.d.ts"
+    },
+    "./pcx": {
+      "import": "./dist/pcx/index.js",
+      "types": "./dist/pcx/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
