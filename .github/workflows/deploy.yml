@@ -1,4 +1,4 @@
-name: Deploy Editor to GitHub Pages
+name: Deploy Pages Site
 
 on:
   push:
@@ -11,8 +11,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -24,8 +24,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: 20
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
@@ -34,15 +34,24 @@ jobs:
         run: npm run build:shared
 
       - name: Build editor
-        run: npm run build:editor
+        run: cd packages/editor && npm run build -- --base /etsy-rug-configurator/
+
+      - name: Build merchant tool
+        run: cd packages/merchant-tool && npm run build -- --base /etsy-rug-configurator/merchant/
+
+      - name: Assemble Pages artifact
+        run: |
+          mkdir -p pages-site/merchant
+          cp -r packages/editor/dist/. pages-site/
+          cp -r packages/merchant-tool/dist/. pages-site/merchant/
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./packages/editor/dist
+          path: ./pages-site
 
       - name: Deploy to GitHub Pages
         id: deployment

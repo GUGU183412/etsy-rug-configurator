@@ -68,7 +68,7 @@ function normalizeRuntimeConfig(raw: unknown): RuntimeConfig | null {
 }
 
 export async function loadRuntimeConfig(
-  configPath: string = '/config.json'
+  configPath: string = 'config.json'
 ): Promise<RuntimeConfig> {
   try {
     const response = await fetch(configPath, { cache: 'no-store' });

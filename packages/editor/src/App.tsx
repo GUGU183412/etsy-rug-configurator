@@ -17,6 +17,7 @@ import './App.css';
 function App() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const rendererRef = useRef<ReturnType<typeof createRenderer> | null>(null);
+  const runtimeConfigPath = `${import.meta.env.BASE_URL}config.json`;
 
   const [runtimeConfig, setRuntimeConfig] = useState<RuntimeConfig>(
     FALLBACK_RUNTIME_CONFIG
@@ -42,7 +43,7 @@ function App() {
     let disposed = false;
 
     const loadConfig = async () => {
-      const loadedConfig = await loadRuntimeConfig('/config.json');
+      const loadedConfig = await loadRuntimeConfig(runtimeConfigPath);
       if (disposed) return;
 
       setRuntimeConfig(loadedConfig);
@@ -55,7 +56,7 @@ function App() {
     return () => {
       disposed = true;
     };
-  }, [initializeFromRuntime]);
+  }, [initializeFromRuntime, runtimeConfigPath]);
 
   useEffect(() => {
     if (rendererRef.current && canvasRef.current) {

@@ -4,8 +4,12 @@ import path from 'path';
 
 export default defineConfig(({ mode }) => {
   const isStandalone = mode === 'standalone';
+  const base = isStandalone
+    ? '/'
+    : process.env.PAGES_BASE_MERCHANT || '/';
 
   return {
+    base,
     plugins: [react()],
     resolve: {
       alias: {

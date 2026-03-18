@@ -14,6 +14,7 @@ import './App.css';
 function App() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const rendererRef = useRef<ReturnType<typeof createRenderer> | null>(null);
+  const runtimeConfigPath = `${import.meta.env.BASE_URL}config.json`;
 
   const [configCode, setConfigCode] = useState('');
   const [config, setConfig] = useState<RugConfig | null>(null);
@@ -35,7 +36,7 @@ function App() {
     let disposed = false;
 
     const loadConfigFile = async () => {
-      const loaded = await loadRuntimeConfig('/config.json');
+      const loaded = await loadRuntimeConfig(runtimeConfigPath);
       if (!disposed) {
         setRuntimeConfig(loaded);
       }
@@ -45,7 +46,7 @@ function App() {
     return () => {
       disposed = true;
     };
-  }, []);
+  }, [runtimeConfigPath]);
 
   const renderPreview = (nextConfig: RugConfig) => {
     if (!rendererRef.current || !canvasRef.current) return;
